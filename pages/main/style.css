@@ -53,3 +53,50 @@ a {
     margin: 0 auto;
 }
 
+/* ============
+Buttons
+==============*/
+
+.btn {
+    font-weight: 500;
+    line-height: 22.4px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 29.8rem;
+    height: 5.4rem;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    color: #fff;
+    border-radius: 2.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn-link {
+    color: #fff;
+}
+
+/* ============
+Typography
+==============*/
+
+h2 {
+    font-size: 4.8rem;
+    line-height: 120%;
+}
+
+h3 {
+    font-size: 3.6rem;
+    line-height: 130%;
+}
+
+h2,
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 130%;
+}
