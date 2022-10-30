@@ -150,3 +150,35 @@ Logo
     border-color: #F9804B;
 }
 
+/* ============
+Navbar
+==============*/
+
+.navigation-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    font-weight: 500;
+    line-height: 22.4px;
+    color: #fff;
+    margin-right: 5.8rem;
+}
+
+.current {
+    color: #F9804B;
+}
+
+.design-author a {
+    font-weight: 500;
+    line-height: 140%;
+    color: #fff;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.design-author a:hover,
+.design-author a:focus {
+    color: #F9804B;
+}
