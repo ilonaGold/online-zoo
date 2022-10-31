@@ -199,7 +199,7 @@ Animal Online Block
 
 .animal-online {
     height: 70rem;
-    background: #333B41 url("/assets/images/giant-panda.png") no-repeat;
+    background: #333B41 url("../../assets/images/giant-panda.png") no-repeat;
     background-size: cover;
     background-position: center -7.5rem;
 }
