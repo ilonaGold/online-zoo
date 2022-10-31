@@ -234,3 +234,49 @@ Animal Online Block
     top: 601px;
     left: calc(50% - 298px/2 + 332px);
 }
+
+/* ============
+Backstage Block
+==============*/
+
+.backstage {
+    position: relative;
+    overflow: hidden;
+}
+
+.backstage::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../assets/images/flower.png");
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 293px;
+    height: 605px;
+    top: 25px;
+    right: -88px;
+}
+
+.backstage-container {
+    display: flex;
+    padding: 14rem 0 18rem;
+}
+
+.backstage-content {
+    margin-left: 8.5rem;
+    margin-right: 2rem;
+}
+
+.backstage-title {
+    margin-bottom: 3.5rem;
+}
+
+.backstage-subtitle {
+    font-size: 2.4rem;
+    line-height: 28.8px;
+    margin-top: 6rem;
+    margin-bottom: 3.5rem;
+}
+
+.backstage-img {
+    backdrop-filter: blur(2px);
+}
