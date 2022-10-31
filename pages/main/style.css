@@ -64,12 +64,22 @@ Buttons
     text-transform: uppercase;
     width: 29.8rem;
     height: 5.4rem;
-    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    background-color: #FE9013;
+    background-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     color: #fff;
     border-radius: 2.5rem;
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    background: #E47209;
+}
+
+.btn:active {
+    background: #4B9200;
 }
 
 .btn-link {
@@ -380,6 +390,17 @@ Pets Gallery Block
     cursor: pointer;
 }
 
+.arrow:hover,
+.arrow:focus {
+    background: #E47209;
+    border: #4B9200;
+}
+
+.arrow:active {
+    background: #4B9200;
+    border: #4B9200;
+}
+
 /* ============
 Pick and Feed Block
 ==============*/
@@ -611,10 +632,15 @@ Footer
     row-gap: 1rem;
  }
 
- .social-link {
+.social-link {
     display: flex;
     align-items: center;
     color: #fff;
+}
+
+.social-link:hover,
+.social-link:focus {
+    color: #4B9200;
 }
 
 .circle {
