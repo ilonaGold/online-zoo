@@ -280,3 +280,81 @@ Backstage Block
 .backstage-img {
     backdrop-filter: blur(2px);
 }
+
+/* ============
+Pets Gallery Block
+==============*/
+
+.pets-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10rem;
+    position: relative;
+}
+
+.pets-cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8rem;
+}
+
+.pet-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem 2.8rem;
+}
+
+.pet-card {
+    border: 1px solid #FA6F32;
+    border-radius: 5px;
+}
+
+.pet-card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8rem 1.6rem;
+}
+
+.pet-card-title {
+    font-weight: 500;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.banana-bamboo-icon,
+.meat-fish-icon {
+    width: 48px;
+    height: 48px;
+}
+
+.banana-bamboo-icon {
+    background: no-repeat center/80% url(../../assets/icons/banana-bamboo_icon.png);
+}
+
+.meat-fish-icon {
+    background: no-repeat center/100% url(../../assets/icons/meat-fish_icon.png);
+}
+
+.plant {
+    position: absolute;
+    z-index: -1;
+}
+
+.plant-left {
+    left: 0;
+    bottom: 0;
+}
+
+.plant-right {
+    right: 0;
+    bottom: 0;
+}
+
