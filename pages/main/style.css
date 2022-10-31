@@ -538,3 +538,104 @@ Testimonials Block
     margin-top: -100px;
     z-index: -1;
 }
+
+/* ============
+Footer
+==============*/
+
+.footer {
+    background-color: #111115;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
+
+.footer-container {
+    display: flex;
+    height: 44.3rem;
+}
+
+.footer-col {
+    display: flex;
+}
+
+.footer-col-left {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-col-center {
+    align-items: flex-end;
+}
+
+.footer-col-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 6.75rem;
+}
+
+ .btn-donate .btn {
+    border-radius: .5rem;
+    margin-top: 6.8rem;
+    margin-bottom: 4.4rem;
+}
+
+/* social media icons */
+
+.social-icons-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+ }
+
+ .social-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.circle {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #C4C4C4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.2rem;
+}
+
+.subscribe {
+    font-size: 2.4rem;
+    line-height: 120%;
+    color: #fff;
+    margin-bottom: 1.4rem;
+}
+
+form input {
+    padding: 1rem;
+    width: 22.8rem;
+    border-radius: 0.2rem;
+    line-height: 140%;
+    color: #BDBDBD;
+    background-color: transparent;
+    border: 1px solid #FE9013;
+}
+
+.submit {
+    width: 12.9rem;
+    margin-left: 1rem;
+    padding: 1rem 3.9rem;
+    color: #4B9200;
+    background: #F1F3F2;
+    border: 1px solid #4B9200;
+    border-radius: 0.5rem;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 13.5rem;
+}
