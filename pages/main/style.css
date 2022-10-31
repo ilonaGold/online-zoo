@@ -182,3 +182,55 @@ Navbar
 .design-author a:focus {
     color: #F9804B;
 }
+
+/* ============
+Animal Online Block
+==============*/
+
+.animal-online {
+    height: 70rem;
+    background: #333B41 url("/assets/images/giant-panda.png") no-repeat;
+    background-size: cover;
+    background-position: center -7.5rem;
+}
+
+.animal-online-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.animal-online-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.animal-online-title {
+    font-weight: 700;
+    font-size: 10.65rem;
+    color: #fff;
+    text-transform: uppercase;
+    width: 8ch;
+    line-height: 79.87px;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    left: calc(50% - 500.31px/2 + 330.15px);
+    top: 171px;
+}
+
+.accent-text {
+    color: #FFEE2E;
+}
+
+.ellipse {
+    position: absolute;
+    top: 9.2rem;
+    left: calc(50% - 465px/2 + 239.5px);
+}
+
+.btn-watch {
+    position: absolute;
+    top: 601px;
+    left: calc(50% - 298px/2 + 332px);
+}
