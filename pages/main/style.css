@@ -326,7 +326,7 @@ Pets Gallery Block
 .pet-card {
     border: 1px solid #FA6F32;
     border-radius: .5rem;
-    transition: all 0.3s ease;
+    transition: 0.7s linear;
 }
 
 .pet-card-content {
@@ -343,10 +343,16 @@ Pets Gallery Block
     color: #000;
 }
 
+.pet-card .pet-card-text h4,
+.pet-card .pet-card-text p {
+    transition: 0.7s linear;
+}
+
 .banana-bamboo-icon,
 .meat-fish-icon {
     width: 48px;
     height: 48px;
+    transition: 0.7s linear
 }
 
 .banana-bamboo-icon {
@@ -417,26 +423,15 @@ Pets Gallery Block
     filter: brightness(0.5);
     border-radius: 5px;
     border: none;
+    margin-top: 5rem;
 }
 
-.pet-card:hover .pet-card-text h4 {
-    color: #fff;
-    position: absolute;
-    bottom: 50%;
-}
-
-.pet-card:hover .pet-card-text p {
-    color: #fff;
-    position: absolute;
-    bottom: 45%;
-}
-
+.pet-card:hover .pet-card-text h4,
+.pet-card:hover .pet-card-text p,
 .pet-card:hover .banana-bamboo-icon,
 .pet-card:hover .meat-fish-icon {
     color: #fff;
-    position: absolute;
-    bottom: 45%;
-    right: 5%;
+    transform: translateY(-20rem);
 }
 
 /* ============
