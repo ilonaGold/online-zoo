@@ -423,7 +423,7 @@ Pets Gallery Block
     filter: brightness(0.5);
     border-radius: 5px;
     border: none;
-    margin-top: 5rem;
+    margin-top: 6rem;
 }
 
 .pet-card:hover .pet-card-text h4,
