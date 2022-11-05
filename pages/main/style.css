@@ -326,7 +326,7 @@ Pets Gallery Block
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem 2.8rem;
+    gap: 2rem 1rem;
 }
 
 .pet-card {
