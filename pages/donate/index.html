@@ -140,20 +140,22 @@
                 <!-- Form starts -->
                 <form class="form">
                     <div class="form-container">
-                        <input class="form-amount" type="number" placeholder="Another amount" min="0" max="9999">
+                        <input class="form-amount" type="number" placeholder="Another amount"
+                            onKeyPress="if(this.value.length==4) return false;">
                         <span>$</span>
-                        <div class="form-radio">
+                        <div class=" form-radio">
                             <input class="form-monthly" type="radio" name="option" value="monthly">
                             <label for="option1" class="form-label" id="option1">Monthly</label>
                             <input class="form-once" type="radio" name="option" value="once" checked>
                             <label for="option2" class="form-label" id="option2">Once</label>
                         </div>
                     </div>
-                    <!-- Form ends -->
-                    <div class="btn-feed">
-                        <button class="btn"><a class="btn-link" href="#">Feed a friend now</a></button>
-                    </div>
-                    <p class="call">Share with your friends on social networks</p>
+                </form>
+                <!-- Form ends -->
+                <div class="btn-feed">
+                    <button class="btn"><a class="btn-link" href="#">Feed a friend now</a></button>
+                </div>
+                <p class="call">Share with your friends on social networks</p>
             </div>
         </section>
     </main>
@@ -211,5 +213,4 @@
             </div>
         </div>
     </footer>
-
 </body>
