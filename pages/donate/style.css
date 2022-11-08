@@ -310,22 +310,31 @@ Pick and Feed Block
 
 .donate-range-input[type=range] {
     display: block;
-    width: 95rem;
+    width: 97rem;
     height: .2rem;
     margin-left: 1rem;
     border: none;
     outline: none;
     cursor: pointer;
+    visibility: hidden;
 }
 
 .donate-range-label-container {
     display: flex;
     justify-content: space-between;
     height: 1rem;
-    width: 95rem;
+    width: 97rem;
     position: absolute;
     bottom: 2.3rem;
-    margin-left: 1.3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.donate-range-line {
+    width: 92rem;
+    height: .2rem;
+    background: #72828E;
+    margin-left: 2.5rem;
 }
 
 .donate-range-label {
@@ -440,6 +449,12 @@ input[type="radio"] {
     border: 1px solid #FE9013;
     border-radius: 50%;
     background: transparent
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 input[type="radio"]:hover {
