@@ -1,0 +1,611 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    color: #333B41;
+    overflow-x: hidden;
+}
+
+
+/* ============
+Global Styles
+==============*/
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+ul a {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    transition: all.2s ease-in-out;
+}
+
+.container {
+    width: 100%;
+    max-width: 116rem;
+    margin: 0 auto;
+}
+
+/* ============
+Buttons
+==============*/
+
+.btn {
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 29.8rem;
+    height: 5.4rem;
+    background-color: #FE9013;
+    background-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    color: #fff;
+    border-radius: 2.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    background: #E47209;
+}
+
+.btn:active {
+    background: #4B9200;
+}
+
+.btn-link {
+    color: #fff;
+}
+
+/* ============
+Typography
+==============*/
+
+h2 {
+    font-size: 4.8rem;
+    line-height: 120%;
+}
+
+h3 {
+    font-size: 3.6rem;
+    line-height: 130%;
+}
+
+h2,
+h3 {
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 130%;
+}
+
+
+/* ============
+Header
+==============*/
+
+.header {
+    width: 100%;
+    height: 8rem;
+    padding: 1.4rem 0;
+    background-color: #000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ============
+Logo
+==============*/
+
+.logo-container {
+    width: 8.2rem;
+    height: 5.2rem;
+    margin-right: 6.3rem;
+    border: 1px solid #fff;
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logo-text {
+    font-size: 1.9rem;
+    font-weight: 400;
+    color: #fff;
+    line-height: 22.82px;
+    text-align: center;
+}
+
+.logo-element {
+    position: absolute;
+    left: 10px;
+    bottom: 6.5px;
+}
+
+.logo-container:hover,
+.logo-container:focus {
+    border-color: #F9804B;
+}
+
+/* ============
+Navbar
+==============*/
+
+.navigation-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    font-weight: 500;
+    line-height: 22.4px;
+    color: #fff;
+    margin-right: 5.8rem;
+}
+
+.current {
+    color: #F9804B;
+}
+
+.design-author a {
+    font-weight: 500;
+    line-height: 140%;
+    color: #fff;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.design-author a:hover,
+.design-author a:focus {
+    color: #F9804B;
+}
+
+
+/* ============
+Animal Online Block
+==============*/
+
+.animal-online {
+    height: 38.5rem;
+    background: #333B41 url("../../assets/images/giant-panda.png") no-repeat center/cover;
+}
+
+/* ============
+Pick and Feed Block
+==============*/
+
+.pick {
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    opacity: 0.9;
+    padding: 4.1rem 0 17.75rem;
+    color: #fff;
+}
+
+.pick-intro-title {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.3rem;
+    margin-right: 0.3rem;
+}
+
+.pick-intro-text {
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 5rem;
+}
+
+.donate-info {
+    color: #FE9013;
+    margin-bottom: 6rem;
+}
+
+.donate-container {
+    background: rgba(253, 253, 255, 0.52);
+    backdrop-filter: blur(2px);
+    border-radius: 2rem;
+    padding: 4rem 9.2rem 6.3rem;
+    color: #333B41;
+
+}
+
+.donate-title {
+    color: #FE9013;
+    text-align: center;
+    font-weight: 400;
+    margin-left: -1rem;
+    margin-bottom: 1.9rem;
+}
+
+.donate-text {
+    font-size: 2.4rem;
+    margin-bottom: 10.7rem;
+}
+
+.donate-sample {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 21rem 5rem;
+}
+
+.donate-sample-number {
+    font-size: 7.2rem;
+    font-weight: 500;
+    line-height: 80%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+.donate-multiply {
+    font-size: 2rem;
+    color: #333b41;
+    margin-top: -2rem;
+    margin-right: 5.4rem;
+}
+
+.donate-img {
+    width: 284px;
+    height: 246px;
+    margin-top: -5rem;
+    margin-right: 1.7rem;
+}
+
+/* donate value container */
+
+.donate-slider-container {
+    width: 97.6rem;
+}
+
+.donate-slider {
+    width: 100%;
+    height: 2.7rem;
+    background: #404950;
+    padding-top: 1.25rem;
+    margin-top: 1.8rem;
+    position: relative;
+}
+
+.donate-range-input[type=range] {
+    display: block;
+    width: 95rem;
+    height: .2rem;
+    margin-left: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.donate-range-label-container {
+    display: flex;
+    justify-content: space-between;
+    height: 1rem;
+    width: 95rem;
+    position: absolute;
+    bottom: 2.3rem;
+    margin-left: 1.3rem;
+}
+
+.donate-range-label {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.yellow-label {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #FFEE2E;
+    cursor: pointer;
+}
+
+.yellow-label:hover {
+    transform: scale(1.55);
+}
+
+.active-label {
+    background: url("../../assets/icons/roller_icon.svg") center/contain no-repeat;
+}
+
+.donate-dollars {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -.5rem;
+    margin-top: 2.5rem;
+}
+
+.donate-value-container {
+    display: flex;
+    align-items: center;
+    width: 7.2rem;
+}
+
+.donate-value-container .donate-value {
+    font-size: 2.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #333b41;
+    margin-left: .3rem;
+}
+
+.donate-value-container .donate-value span {
+    font-size: 2rem;
+}
+
+.donate-value-container .donate-value .dollar-accent,
+.donate-value-container .donate-value-current {
+    color: #FE9013;
+}
+
+/* form */
+
+.form-container {
+    margin: 0 auto;
+    width: 269px;
+    height: 52px;
+    background: transparent;
+    color: #929699;
+    border: 1px solid #929699;
+    border-radius: 0.2rem;
+    margin-top: 10.1rem;
+    margin-bottom: 2.7rem;
+}
+
+.form-container:hover {
+    border: 1px solid #4b9200;
+    color: #4b9200;
+}
+
+.form-amount {
+    width: 223px;
+    height: 50px;
+    padding: 0 1rem;
+    background: none;
+    border: none;
+    outline: none;
+    margin-bottom: 2.7rem;
+    margin-right: 1.5rem;
+}
+
+.form-amount::placeholder {
+    color: #929699;
+    font-size: 1.5rem;
+}
+
+.form-radio {
+    width: 245px;
+    height: 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2.5rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+input[type="radio"] {
+    margin-right: -2rem;
+    appearance: none;
+    background-color: transparent;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #FE9013;
+    border-radius: 50%;
+    background: transparent
+}
+
+input[type="radio"]:hover {
+    border: 1px solid #4B9200;
+}
+
+input[type="radio"]:checked {
+    background: #4B9200;
+    border: 1px solid #4B9200;
+}
+
+.form-radio label {
+    width: 84px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.btn-feed {
+    display: block;
+    padding: .7rem;
+    width: 31rem;
+    margin: 0 auto;
+    margin-top: 7.1rem;
+    margin-bottom: 2.5rem;
+}
+
+.call {
+    text-align: center;
+}
+
+/* ============
+Footer
+==============*/
+
+.footer {
+    background-color: #111115;
+}
+
+.footer-container {
+    display: flex;
+    height: 44.3rem;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
+
+.footer-col {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.footer-col-left {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 2.8rem;
+}
+
+.btn-donate .btn {
+    border-radius: .5rem;
+    padding: 1.6rem;
+    letter-spacing: 1px;
+    margin-top: 2.2rem;
+}
+
+.footer-col-center {
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-right: 2.8rem;
+}
+
+.footer-col-center .nav-link {
+    font-weight: 400;
+    margin: 0;
+}
+
+.footer-col-center .nav-list {
+    column-gap: 5.8rem;
+}
+
+.footer-col-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+.subscribe {
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 120%;
+    color: #fff;
+    margin-bottom: 1.2rem;
+}
+
+.form-email {
+    padding: 1.1rem 0.9rem;
+    width: 22.8rem;
+    border-radius: 0.2rem;
+    line-height: 140%;
+    color: #BDBDBD;
+    background-color: transparent;
+    border: 1px solid #FE9013;
+}
+
+.form-email::placeholder {
+    font-size: 1.6rem;
+}
+
+.submit-btn {
+    width: 12.9rem;
+    font-size: 1.6rem;
+    margin-left: 0.7rem;
+    padding: 1.1rem 3.9rem;
+    color: #4B9200;
+    background: #F1F3F2;
+    border: 1px solid #4B9200;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.mistake-btn {
+    border: 1px solid #D31414;
+    color: #D31414;
+    cursor: not-allowed !important;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 13.5rem;
+}
+
+.copyright p {
+    margin-top: 1rem;
+}
+
+/* social media icons */
+
+.social-icons-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.social-link:hover,
+.social-link:focus {
+    color: #4B9200;
+}
+
+.circle {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #C4C4C4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.2rem;
+}
