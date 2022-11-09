@@ -343,7 +343,13 @@ Pick and Feed Block
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
+    border: 1px solid red;
     cursor: pointer;
+}
+
+.donate-range-label:hover {
+    transform: scale(1.45);
 }
 
 .yellow-label {
@@ -351,15 +357,20 @@ Pick and Feed Block
     height: 10px;
     border-radius: 50%;
     background: #FFEE2E;
+    position: absolute;
     cursor: pointer;
 }
 
 .yellow-label:hover {
-    transform: scale(1.55);
+    transform: scale(1.05);
 }
 
 .active-label {
     background: url("../../assets/icons/roller_icon.svg") center/contain no-repeat;
+}
+
+.active-label:hover {
+    transform: scale(1.25);
 }
 
 .donate-dollars {
