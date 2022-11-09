@@ -344,7 +344,6 @@ Pick and Feed Block
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    border: 1px solid red;
     cursor: pointer;
 }
 
