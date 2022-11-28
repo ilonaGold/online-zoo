@@ -7,6 +7,7 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    margin: 0 auto;
 }
 
 body {
@@ -268,7 +269,7 @@ Backstage Block
     width: 293px;
     height: 605px;
     top: 15px;
-    right: -30px;
+    right: -130px;
 }
 
 .backstage-container {
@@ -278,7 +279,6 @@ Backstage Block
 
 .backstage-title {
     margin-bottom: 1.8rem;
-    letter-spacing: -0.995px;
 }
 
 .backstage-text {
@@ -381,12 +381,12 @@ Pets Gallery Block
 }
 
 .plant-left {
-    left: 70px;
+    left: -59rem;
     bottom: 0;
 }
 
 .plant-right {
-    right: 65px;
+    right: 0;
     bottom: 0;
 }
 
@@ -572,7 +572,7 @@ Testimonials Block
 .testimonial {
     height: 38.5rem;
     width: calc((100% / 4) - 15px);
-    padding: 1.6rem 1.6rem 2.5rem;
+    padding: 1.3rem 1.6rem 2.5rem;
     border-radius: 2rem;
     border-color: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
     background: #F1F3F2;
@@ -642,7 +642,7 @@ Testimonials Block
 
 .testimonials-decoration {
     position: absolute;
-    right: 60px;
+    right: -17rem;
     margin-top: -10rem;
     z-index: -1;
 }
