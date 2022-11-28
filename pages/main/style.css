@@ -777,3 +777,257 @@ form input {
 .copyright p {
     margin-top: 1rem;
 }
+
+/* =================
+Small Desktop Layout
+====================*/
+
+@media only screen and (max-width: 1000px) {
+    body {
+        max-width: 100rem;
+    }
+    .container {
+        width: 92rem;
+    }
+    .header {
+        width: 100rem;
+        padding-right: 2rem;
+    }
+    .nav-link {
+        margin-right: 4.8rem;
+    }
+    .animal-online {
+        height: 50rem;
+        background: #333B41 url("../../assets/images/giant-panda-small.png") no-repeat;
+        background-size: cover;
+    }
+    .animal-online-title {
+        font-size: 8.5rem;
+        line-height: 63.75px;
+        top: 12.5rem;
+        left: 51rem;
+    }
+    .ellipse {
+        width: 367px;
+        height: 367px;
+        position: absolute;
+        left: calc(50% - 367px/2 + 139.5px);
+        top: 69px;
+    }
+    .btn-watch {
+        position: absolute;
+        top: 463px;
+        left: calc(50% - 298px/2 + 214px);
+    }
+    .backstage-container {
+        margin-top: 0;
+    }
+    .backstage::before {
+        background-image: none;
+    }
+    .backstage-title {
+        font-size: 4.4rem;
+    }
+    .backstage-img {
+        width: 455px;
+        height: 408px;
+        margin-right: 3.1rem;
+        margin-top: 1rem;
+        object-fit: cover;
+    }
+    .pet-card {
+        width: 294px;
+    }
+    .plant {
+        z-index: -1;
+    }
+    .plant-left {
+        left: -60%;
+        bottom: -25%;
+    }
+    .plant-right {
+        right: 0;
+        bottom: 0;
+    }
+    .pet-card {
+        margin-bottom: 7rem;
+    }
+    .arrows-container {
+        left: 50%;
+        top: 42%;
+        display: flex;
+    }
+.testimonials {
+    padding-top: 7rem;
+    padding-bottom: 10rem;
+}
+
+.testimonial {
+    width: 293px;
+}
+
+.testimonials-title {
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 4.8rem;
+}
+
+.testimonials-content {
+    display: flex;
+    gap: 3rem;
+}
+
+.testimonial-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.scroller-bar {
+    width: 11.59rem;
+    height: 0.6rem;
+    border-radius: 0.5rem;
+    background: #FE9013;
+    cursor: pointer;
+}
+
+
+.testimonials-decoration {
+    position: absolute;
+    right: -17rem;
+    margin-top: -10rem;
+    z-index: -1;
+}
+
+/* ============
+Footer
+==============*/
+
+.footer {
+    background-color: #111115;
+}
+
+.footer-container {
+    display: flex;
+    height: 44.3rem;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
+
+.footer-col {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.footer-col-left {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 2.8rem;
+}
+
+.footer-col-center {
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-right: 2.8rem;
+}
+
+.footer-col-center .nav-list {
+    column-gap: 5.8rem;
+}
+
+.footer-col-center .nav-link {
+    font-weight: 400;
+    margin: 0;
+}
+
+.footer-col-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+.btn-donate .btn {
+    border-radius: .5rem;
+    padding: 1.8rem;
+    margin-top: 2rem;
+}
+
+/* social media icons */
+
+.social-icons-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.social-link:hover,
+.social-link:focus {
+    color: #4B9200;
+}
+
+.circle {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #C4C4C4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.2rem;
+}
+
+.subscribe {
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 120%;
+    color: #fff;
+    margin-bottom: 1.1rem;
+}
+
+form input {
+    padding: 0.9rem;
+    width: 22.8rem;
+    border-radius: 0.2rem;
+    line-height: 140%;
+    color: #BDBDBD;
+    background-color: transparent;
+    border: 1px solid #FE9013;
+}
+
+.submit-btn {
+    width: 12.9rem;
+    margin-left: 0.7rem;
+    padding: 1.3rem 3.9rem;
+    color: #4B9200;
+    background: #F1F3F2;
+    border: 1px solid #4B9200;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.mistake-btn {
+    border: 1px solid #D31414;
+    color: #D31414;
+    cursor: not-allowed !important;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 13.5rem;
+}
+
+.copyright p {
+    margin-top: 1rem;
+}
+
+}
