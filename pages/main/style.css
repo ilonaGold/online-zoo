@@ -802,7 +802,7 @@ form input {
 Small Desktop Layout
 ====================*/
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1001px) {
     .container {
         width: 94rem;
     }
