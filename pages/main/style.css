@@ -128,9 +128,14 @@ Header
 }
 
 header .container {
+    height: 8.1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.burger-menu {
+    display: none;
 }
 
 /* ============
@@ -797,12 +802,11 @@ form input {
 Small Desktop Layout
 ====================*/
 
-@media only screen and (max-width: 999px) {
+@media screen and (max-width: 1000px) {
     .container {
         width: 94rem;
     }
     .header {
-        width: 100rem;
         padding-right: 2rem;
         z-index: 2;
     }
@@ -837,9 +841,6 @@ Small Desktop Layout
         padding: 0;
         margin-top: -8.7rem;
     }
-    .backstage::before {
-        background-image: none;
-    }
     .backstage-img {
         width: 455px;
         height: 408px;
@@ -858,6 +859,9 @@ Small Desktop Layout
     .backstage-text {
         width: 450px;
     }
+    .backstage::before {
+        display: none;
+     }
     /* Pet Gallery Block */
     .pets-gallery {
         padding-top: 12.7rem;
@@ -977,5 +981,261 @@ Small Desktop Layout
     }
     .email {
         margin-right: 3.1rem;
+    }
+}
+
+/* =================
+ Tablet Layout
+====================*/
+
+@media screen and (max-width: 640px) {
+    .container {
+        width: 62rem;
+    }
+    .header {
+        max-height: 3.4rem;
+        width: 64rem;
+    }
+    .header-container {
+        max-height: 3.4rem;
+        width: 100%;
+        max-width: 62rem;
+        padding-left: 2rem;
+        padding-right: 0;
+    }
+    .logo-container {
+        width: 46.86px;
+        height: 29.03px;
+        border: none;
+    }
+    .logo-text {
+        font-size: 1.22rem;
+        line-height: 15px;
+    }
+    .logo-text::after {
+        left: 4.23px;
+        top: 12.64px;
+    }
+    .logo-element {
+        position: absolute;
+        left: -2px;
+        bottom: 6.5px;
+    }
+    .navbar,
+    .design-author {
+        display: none;
+    }
+    .navigation-container {
+        width: 100%;
+    }
+    .burger-menu {
+        display: block;
+        margin-left: auto;
+    }
+    /* Animal Online Block */
+    .animal-online {
+        height: 37.3rem;
+        background: transparent;
+        position: relative;
+        margin-top: -3.3rem;
+    }
+    .animal-online-container {
+        height: 37.3rem;
+        background: #333B41 url("../../assets/images/giant-panda-tablet.png");
+        background-repeat: no-repeat;
+        position: absolute;
+        left: -0.21px;
+        right: 1.51px;
+        top: 0px;
+    }
+    .animal-online-title {
+        font-size: 5.4rem;
+        line-height: 41px;
+        position: absolute;
+        top: 82.04px;
+        left: 60%;
+    }
+    .ellipse {
+        position: absolute;
+        height: 237.6px;
+        width: 237.6px;
+        top: 44.23px;
+        left: calc(50% - 237.5px/2 + 138.44px);
+    }
+    .btn-watch {
+        position: absolute;
+        top: 279px;
+        left: 15px;
+        width: 300px;
+    }
+    /* Backstage Block */
+    .backstage-container {
+        padding: 0 2rem;
+        margin-top: -14rem;
+    }
+    .backstage-img {
+        display: none;
+    }
+    .backstage::before {
+        position: absolute;
+        background-image: url("../../assets/images/flower-tablet.png");
+        top: -75px;
+        right: -175px;
+     }
+    .backstage-title {
+        margin-bottom: 2.4rem;
+    }
+    .backstage-subtitle {
+        margin-top: 2.8rem;
+        margin-bottom: 2rem;
+    }
+    .backstage-text {
+        width: 450px;
+    }
+    .backstage-text:last-child {
+        width: 500px;
+    }
+    /* Pet Gallery Block */
+    .pets-gallery {
+        padding-top: 6rem;
+        padding-bottom: 10rem;
+        padding-left: 2rem;
+    }
+    .pets-cards-container {
+        margin-bottom: 0;
+    }
+    .pet-card {
+        width: 28.5rem;
+        height: 33.2rem;
+        margin-right: 1.75rem;
+        margin-bottom: 5.5rem;
+        margin-top: 1.75rem;
+    }
+    .pet-card img {
+        width: 285.24px;
+        height: 285.24px;
+    }
+    .pet-card-title {
+        font-size: 1.25rem;
+        margin-top: -1.2rem;
+    }
+    .pet-card-par {
+        font-size: 1.15rem;
+    }
+    .arrows-container {
+        left: 40%;
+        top: 40%;
+        width: 15rem;
+    }
+    .hide-tablet {
+        display: none;
+    }
+    .pets-gallery::before {
+        background-size: 167px;
+        bottom: -50px;
+        right: -80px;
+    }
+    .pets-gallery::after {
+        background-size: 383px;
+        background-repeat: no-repeat;
+        bottom: -250px;
+        left: -250px;
+    }
+    /* Pick and Feed Block */
+    .friends {
+        padding: 2rem 0 2rem;
+        margin-top: 0;
+        min-height: 78.1rem;
+    }
+    .friends-container {
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+        padding-left: 1rem;
+    }
+    .friends-title {
+        font-size: 4.2rem;
+        margin-bottom: 2rem;
+    }
+    .friends-subtitle {
+        font-size: 2.4rem;
+        margin-bottom: 1.8rem;
+        width: 100%;
+    }
+    .friends-info {
+        padding-left: 1rem;
+    }
+    .friends-text-bold {
+        width: 100%;
+    }
+    .friends-text-normal {
+        width: 100%;
+    }
+    .friends-explanation {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .arrow-big {
+        display: none;
+    }
+    .friends-figure {
+        position: relative;
+    }
+    .friends-figure::after {
+        content: "";
+        position: absolute;
+        background: url("./../assets/icons/green-arrow.png") no-repeat;
+        width: 100px;
+        height: 40px;
+        top: -6%;
+        right: -39%;
+        z-index: 2;
+        margin-top: 6rem;
+}
+    .btn-feed {
+        margin-top: 2rem;
+    }
+    /* Testimonials Block */
+    .testimonials {
+        padding-top: 6rem;
+        padding-bottom: 8rem;
+    }
+    .testimonials-content {
+        flex-direction: column;
+        margin-bottom: 4rem;
+        gap: 1.5rem;
+    }
+    .testimonial {
+        width: 60rem;
+        height: 10.9rem;
+    }
+    .testimonials-container:after {
+        position: absolute;
+        bottom: -33%;
+        right: -14%;
+        background: url("../../assets/images/leaf-foto-small.png");
+    }
+    .testimonials-title {
+        margin-bottom: 3rem;
+    }
+    .scroller,
+    .scoller-bar {
+        display: none;
+    }
+    /* Footer */
+    /* .footer-col-center {
+        margin-left: 14.5rem;
+    } */
+    .email {
+        display: none;
+    }
+    .footer-container {
+        display: grid;
+        grid-template-areas:
+            "footer-row-top"
+            "footer-row-middle"
+            "foorer-row-bottom";
+    }
+    .social-icons-list p {
+        display: none;
     }
 }
