@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,13 +9,10 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
-    margin: 0 auto;
 }
 
 body {
     width: 100%;
-    margin: 0 auto;
-    min-height: 100vh;
     font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
     color: #333B41;
@@ -120,9 +119,12 @@ Header
 
 .header {
     width: 100%;
-    height: 8rem;
-    padding: 1.4rem 0;
-    background-color: #000;
+    height: 8.1rem;
+    background: #000;
+    position: relative;
+    display: flex;
+    justify-items: center;
+    align-items: center;
 }
 
 header .container {
@@ -172,6 +174,7 @@ Navbar
 
 .navigation-container {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -204,10 +207,12 @@ Animal Online Block
 ==============*/
 
 .animal-online {
-    height: 70rem;
-    background: #333B41 url("../../assets/images/giant-panda.png") no-repeat;
+    height: 78.1rem;
+    background: #333B41 url("../../assets/images/giant-panda.png");
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: top -15.5rem;
+    background-position-y: 55%;
+    margin-top: -8.1rem;
 }
 
 .animal-online-container {
@@ -232,7 +237,7 @@ Animal Online Block
     z-index: 1;
     position: absolute;
     left: calc(50% - 495px/2 + 334px);
-    top: 165px;
+    top: 170px;
 }
 
 .accent-text {
@@ -257,7 +262,6 @@ Backstage Block
 
 .backstage {
     position: relative;
-    overflow: hidden;
 }
 
 .backstage::before {
@@ -268,9 +272,9 @@ Backstage Block
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     width: 293px;
     height: 605px;
-    top: 15px;
-    right: -130px;
-}
+    top: 10px;
+    right: 65px;
+ }
 
 .backstage-container {
     display: flex;
@@ -304,21 +308,20 @@ Pets Gallery Block
 ==============*/
 
 .pets-gallery {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 14.9rem;
-    padding-bottom: 10rem;
+    max-width: 160rem;
+    margin: 0 auto;
+    padding-top: 14.8rem;
+    padding-bottom: 10.3rem;
     position: relative;
 }
 
 .pets-cards-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 8rem;
+    display: grid;
+    grid-template-columns: repeat (3, fr);
+    justify-content: space-between;
+    column-gap: 3rem;
+    row-gap: 2rem;
+    margin-bottom: 7.7rem;
 }
 
 .pet-cards {
@@ -326,7 +329,7 @@ Pets Gallery Block
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem 1rem;
+    gap: 2.1rem 1rem;
 }
 
 .pet-card {
@@ -339,7 +342,7 @@ Pets Gallery Block
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .2rem .5rem .8rem 1.5rem;
+    padding: .2rem .6rem .7rem 1.5rem;
 }
 
 .pet-card-title {
@@ -375,19 +378,30 @@ Pets Gallery Block
     background: no-repeat center/100% url(../../assets/icons/meat-fish_icon.png);
 }
 
-.plant {
+.btn-choose {
+    display: block;
+    margin-inline: auto;
+}
+
+.pets-gallery::after {
+    content: "";
+    width: 880px;
+    height: 460px;
+    background: url("../../assets/images/palm-foto.png");
     position: absolute;
+    bottom: 0;
+    left: -590px;
     z-index: -1;
 }
 
-.plant-left {
-    left: -59rem;
+.pets-gallery::before {
+    content: "";
+    width: 368px;
+    height: 275px;
+    background: url("../../assets/images/strelitzia.png");
+    position: absolute;
     bottom: 0;
-}
-
-.plant-right {
     right: 0;
-    bottom: 0;
 }
 
 .arrows-container {
@@ -461,7 +475,7 @@ Pick and Feed Block
     background: rgba(253, 253, 255, 0.52);
     backdrop-filter: blur(2px);
     border-radius: 2rem;
-    padding-top: 4rem;
+    padding-top: 4.2rem;
     padding-bottom: 4rem;
 }
 
@@ -477,7 +491,7 @@ Pick and Feed Block
 
 .friends-subtitle {
     font-size: 2.4rem;
-    margin-bottom: 4rem;
+    margin-bottom: 4.1rem;
 }
 
 .friends-text-bold,
@@ -501,27 +515,27 @@ Pick and Feed Block
 
 .friends-explanation {
     margin-top: 6rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 3.7rem;
     text-align: center;
 }
 
 .friends-wrapper {
+    width: 76.4rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 19.25rem;
-    margin-bottom: 2rem;
+    margin-inline: auto;
+    margin-bottom: 1.4rem;
 }
 
 .friends figcaption {
     width: 16.8rem;
-    padding: 2.25rem 0;
+    padding: 3.5rem 0;
 }
 
 .figure-img {
     width: 168px;
     height: 168px;
-    padding: 3rem;
+    padding: 2rem;
     background: #fff;
     border: 1px solid #F9804B;
     border-radius: 0.5rem;
@@ -531,7 +545,7 @@ Pick and Feed Block
 .arrow-big {
     width: 69px;
     height: 35px;
-    margin-bottom: 8.8rem;
+    margin-top: 6rem;
     background: no-repeat center/100% url(../../assets/icons/arrow-big.png);
 }
 
@@ -539,7 +553,6 @@ Pick and Feed Block
     display: flex;
     justify-content: center;
     padding: 1.75rem 1.2rem;
-    margin-top: 4rem;
 }
 
 /* ============
@@ -547,8 +560,13 @@ Testimonials Block
 ==============*/
 
 .testimonials {
-    padding-top: 14rem;
-    padding-bottom: 18rem;
+    padding-top: 13.75rem;
+    padding-bottom: 17.75rem;
+}
+
+.testimonials-container {
+    position: relative;
+    max-width: 116rem;
 }
 
 .testimonials-title {
@@ -559,6 +577,7 @@ Testimonials Block
 
 .testimonials-content {
     display: flex;
+    justify-content: space-between;
     gap: 3rem;
 }
 
@@ -592,11 +611,9 @@ Testimonials Block
     z-index: -1;
 }
 
-.user-img {
-    margin-right: 1rem;
-}
-
 .user-info {
+    width: 19rem;
+    margin-left: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -624,7 +641,7 @@ Testimonials Block
     border-radius: 0.5rem;
     border-image: linear-gradient(0deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%),
                 linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
-    margin: 2.4rem 0 3.2rem 28rem;
+    margin: 2.6rem 0 3rem 28rem;
 }
 
 .scroller-bar {
@@ -640,10 +657,14 @@ Testimonials Block
     align-self: flex-start;
 }
 
-.testimonials-decoration {
+.testimonials-container:after {
+    content: "";
+    width: 300.92px;
+    height: 295.45px;
     position: absolute;
-    right: -17rem;
-    margin-top: -10rem;
+    bottom: -33%;
+    right: -24%;
+    background: url("../../assets/images/leaf-foto.png");
     z-index: -1;
 }
 
@@ -653,53 +674,93 @@ Footer
 
 .footer {
     background-color: #111115;
+    padding-top: 4.1rem;
+    padding-bottom: 6rem;
 }
 
 .footer-container {
-    display: flex;
-    height: 44.3rem;
-    padding-top: 4rem;
-    padding-bottom: 5rem;
+    display: grid;
+    grid-template-areas:
+        "footer-row-top"
+        "footer-row-middle"
+        "foorer-row-bottom";
 }
 
-.footer-col {
+.footer-row-top {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    flex: 1;
+    margin-bottom: 3.6rem;
 }
 
-.footer-col-left {
-    flex-direction: column;
+.subscribe {
+    width: 29.8rem;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 120%;
+    color: #fff;
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+form input {
+    padding: 0.9rem;
+    width: 22.8rem;
+    border-radius: 0.2rem;
+    line-height: 140%;
+    color: #BDBDBD;
+    background-color: transparent;
+    border: 1px solid #FE9013;
+}
+
+.submit-btn {
+    width: 12.9rem;
+    margin-left: 0.7rem;
+    padding: 1.1rem 3.9rem;
+    color: #4B9200;
+    background: #F1F3F2;
+    border: 1px solid #4B9200;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.mistake-btn {
+    border: 1px solid #D31414;
+    color: #D31414;
+    cursor: not-allowed !important;
+}
+
+.footer-row-middle .btn-donate {
+    border-radius: .5rem;
+    padding: 1.5rem;
+    margin-bottom: 4.5rem;
+}
+
+.footer-row-bottom {
+    height: 13.4rem;
+    display: flex;
     justify-content: space-between;
-    margin-right: 2.8rem;
+    align-items: flex-end;
 }
 
 .footer-col-center {
-    align-items: flex-end;
-    justify-content: space-between;
-    margin-right: 2.8rem;
-}
-
-.footer-col-center .nav-list {
-    column-gap: 5.8rem;
+    margin-left: 18rem;
 }
 
 .footer-col-center .nav-link {
     font-weight: 400;
-    margin: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
-.footer-col-right {
+.copyright {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: space-between;
+    align-items: flex-end;
 }
 
-.btn-donate .btn {
-    border-radius: .5rem;
-    padding: 1.8rem;
-    margin-top: 2rem;
+.copyright p {
+    margin-top: 1rem;
 }
 
 /* social media icons */
@@ -732,79 +793,32 @@ Footer
     margin-right: 1.2rem;
 }
 
-.subscribe {
-    font-size: 2.4rem;
-    font-weight: 400;
-    line-height: 120%;
-    color: #fff;
-    margin-bottom: 1.1rem;
-}
-
-form input {
-    padding: 0.9rem;
-    width: 22.8rem;
-    border-radius: 0.2rem;
-    line-height: 140%;
-    color: #BDBDBD;
-    background-color: transparent;
-    border: 1px solid #FE9013;
-}
-
-.submit-btn {
-    width: 12.9rem;
-    margin-left: 0.7rem;
-    padding: 1.3rem 3.9rem;
-    color: #4B9200;
-    background: #F1F3F2;
-    border: 1px solid #4B9200;
-    border-radius: 0.5rem;
-    cursor: pointer;
-}
-
-.mistake-btn {
-    border: 1px solid #D31414;
-    color: #D31414;
-    cursor: not-allowed !important;
-}
-
-.copyright {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-left: 13.5rem;
-}
-
-.copyright p {
-    margin-top: 1rem;
-}
-
 /* =================
 Small Desktop Layout
 ====================*/
 
-@media only screen and (max-width: 1000px) {
-    body {
-        max-width: 100rem;
-    }
+@media only screen and (max-width: 999px) {
     .container {
-        width: 92rem;
+        width: 94rem;
+        background: red;
     }
     .header {
         width: 100rem;
         padding-right: 2rem;
+        z-index: 2;
     }
     .nav-link {
         margin-right: 4.8rem;
     }
+    /* Animal Online Block */
     .animal-online {
-        height: 50rem;
-        background: #333B41 url("../../assets/images/giant-panda-small.png") no-repeat;
-        background-size: cover;
-    }
+        background: url("../../assets/images/giant-panda-small.png") no-repeat;
+        min-height: 58.4rem;
+     }
     .animal-online-title {
         font-size: 8.5rem;
         line-height: 63.75px;
-        top: 12.5rem;
+        top: 12.3rem;
         left: 51rem;
     }
     .ellipse {
@@ -816,11 +830,12 @@ Small Desktop Layout
     }
     .btn-watch {
         position: absolute;
-        top: 463px;
+        top: 484px;
         left: calc(50% - 298px/2 + 214px);
     }
+    /* Backstage Block */
     .backstage-container {
-        margin-top: 0;
+        padding-top: 0;
     }
     .backstage::before {
         background-image: none;
@@ -832,202 +847,101 @@ Small Desktop Layout
         width: 455px;
         height: 408px;
         margin-right: 3.1rem;
-        margin-top: 1rem;
+        margin-top: .8rem;
         object-fit: cover;
     }
+    /* Pet Gallery Block */
     .pet-card {
         width: 294px;
+        height: 294px;
+        margin-bottom: 11rem;
+        margin-top: 1.75rem;
     }
-    .plant {
-        z-index: -1;
-    }
-    .plant-left {
-        left: -60%;
-        bottom: -25%;
-    }
-    .plant-right {
-        right: 0;
-        bottom: 0;
-    }
-    .pet-card {
-        margin-bottom: 7rem;
+    .pet-card-par {
+        font-size: 1.3rem;
     }
     .arrows-container {
-        left: 50%;
+        left: 34.5%;
         top: 42%;
-        display: flex;
+        width: 30rem;
+       }
+    .pets-gallery::before {
+        width: 241px;
+        height: 180px;
+        background-size: 244px;
+        background-repeat: no-repeat;
+        bottom: 0;
     }
-.testimonials {
-    padding-top: 7rem;
-    padding-bottom: 10rem;
-}
+    .pets-gallery::after {
+        position: absolute;
+        background-size: 383px;
+        background-repeat: no-repeat;
+        bottom: -260px;
+        left: -200px;
+        z-index: -1;
+    }
+    .pet-card:hover img {
+        margin-top: 0;
+    }
+    .pet-card:hover .pet-card-text h4,
+    .pet-card:hover .pet-card-text p,
+    .pet-card:hover .banana-bamboo-icon,
+    .pet-card:hover .meat-fish-icon {
+        transform: translateY(-15rem);
+    }
+    /* Pick and Feed Block */
+    .friends {
+        min-height: 87.6rem;
+        padding: 3rem 0 5rem;
+        margin-top: 6.6rem;
+    }
+    .friends-container {
+        padding: 3rem 0;
+    }
+    .friends-info {
+        margin-left: 4.8rem;
+        padding-left: 0;
+    }
+    .friends-text-bold,
+    .friends-text-normal {
+        width: 81.3rem;
+    }
+    /* Testimonials Block */
+    .testimonials-container {
+        padding: 0;
+        margin-bottom: -5rem;
+    }
+    .testimonials-container:after {
+        content: "";
+        width: 239.98px;
+        height: 225.62px;
+        position: absolute;
+        bottom: -22%;
+        right: -6%;
+        background: url("../../assets/images/leaf-foto-small.png");
+    }
+    .testimonials-title {
+        margin-bottom: 3rem;
+    }
+    .testimonial {
+        width: calc((100% / 3) - 15px);
+    }
+    .testimonials .testimonial:last-child {
+        display: none;
+    }
+    .scroller {
+        width: 36rem;
+        height: 0.6rem;
+        margin-left: 25rem;
+        margin-bottom: 5.2rem;
+    }
+    .scroller-bar {
+        width: 7.5rem;
+        height: 0.6rem;
+    }
+    /* Footer */
+    .footer-container {
+        padding: 4rem 3rem 5rem;
 
-.testimonial {
-    width: 293px;
-}
-
-.testimonials-title {
-    text-align: center;
-    margin-top: 0.5rem;
-    margin-bottom: 4.8rem;
-}
-
-.testimonials-content {
-    display: flex;
-    gap: 3rem;
-}
-
-.testimonial-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-.scroller-bar {
-    width: 11.59rem;
-    height: 0.6rem;
-    border-radius: 0.5rem;
-    background: #FE9013;
-    cursor: pointer;
-}
-
-
-.testimonials-decoration {
-    position: absolute;
-    right: -17rem;
-    margin-top: -10rem;
-    z-index: -1;
-}
-
-/* ============
-Footer
-==============*/
-
-.footer {
-    background-color: #111115;
-}
-
-.footer-container {
-    display: flex;
-    height: 44.3rem;
-    padding-top: 4rem;
-    padding-bottom: 5rem;
-}
-
-.footer-col {
-    display: flex;
-    justify-content: space-between;
-    flex: 1;
-}
-
-.footer-col-left {
-    flex-direction: column;
-    justify-content: space-between;
-    margin-right: 2.8rem;
-}
-
-.footer-col-center {
-    align-items: flex-end;
-    justify-content: space-between;
-    margin-right: 2.8rem;
-}
-
-.footer-col-center .nav-list {
-    column-gap: 5.8rem;
-}
-
-.footer-col-center .nav-link {
-    font-weight: 400;
-    margin: 0;
-}
-
-.footer-col-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: space-between;
-}
-
-.btn-donate .btn {
-    border-radius: .5rem;
-    padding: 1.8rem;
-    margin-top: 2rem;
-}
-
-/* social media icons */
-
-.social-icons-list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-}
-
-.social-link {
-    display: flex;
-    align-items: center;
-    color: #fff;
-}
-
-.social-link:hover,
-.social-link:focus {
-    color: #4B9200;
-}
-
-.circle {
-    width: 26px;
-    height: 26px;
-    border-radius: 50%;
-    background: #C4C4C4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 1.2rem;
-}
-
-.subscribe {
-    font-size: 2.4rem;
-    font-weight: 400;
-    line-height: 120%;
-    color: #fff;
-    margin-bottom: 1.1rem;
-}
-
-form input {
-    padding: 0.9rem;
-    width: 22.8rem;
-    border-radius: 0.2rem;
-    line-height: 140%;
-    color: #BDBDBD;
-    background-color: transparent;
-    border: 1px solid #FE9013;
-}
-
-.submit-btn {
-    width: 12.9rem;
-    margin-left: 0.7rem;
-    padding: 1.3rem 3.9rem;
-    color: #4B9200;
-    background: #F1F3F2;
-    border: 1px solid #4B9200;
-    border-radius: 0.5rem;
-    cursor: pointer;
-}
-
-.mistake-btn {
-    border: 1px solid #D31414;
-    color: #D31414;
-    cursor: not-allowed !important;
-}
-
-.copyright {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-left: 13.5rem;
-}
-
-.copyright p {
-    margin-top: 1rem;
-}
-
+    }
 }
