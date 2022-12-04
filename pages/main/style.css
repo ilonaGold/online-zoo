@@ -800,7 +800,6 @@ Small Desktop Layout
 @media only screen and (max-width: 999px) {
     .container {
         width: 94rem;
-        background: red;
     }
     .header {
         width: 100rem;
@@ -835,50 +834,69 @@ Small Desktop Layout
     }
     /* Backstage Block */
     .backstage-container {
-        padding-top: 0;
+        padding: 0;
+        margin-top: -8.7rem;
     }
     .backstage::before {
         background-image: none;
     }
-    .backstage-title {
-        font-size: 4.4rem;
-    }
     .backstage-img {
         width: 455px;
         height: 408px;
-        margin-right: 3.1rem;
-        margin-top: .8rem;
+        margin-right: 2.5rem;
         object-fit: cover;
     }
+    .backstage-title {
+        font-size: 4.8rem;
+        line-height: 55px;
+        margin-top: -.8rem;
+        margin-bottom: 2.4rem;
+    }
+    .backstage-subtitle {
+        margin-bottom: 3.1rem;
+    }
+    .backstage-text {
+        width: 450px;
+    }
     /* Pet Gallery Block */
+    .pets-gallery {
+        padding-top: 12.7rem;
+        padding-bottom: 7.8rem;
+    }
+    .pets-cards-container {
+        margin-bottom: 3rem;
+    }
     .pet-card {
         width: 294px;
         height: 294px;
         margin-bottom: 11rem;
         margin-top: 1.75rem;
     }
-    .pet-card-par {
-        font-size: 1.3rem;
+    .pet-card-content {
+        padding: .3rem .6rem 1rem 1.2rem;
+    }
+    .pet-card-title {
+        margin-top: .8rem;
+        margin-bottom: 0;
     }
     .arrows-container {
         left: 34.5%;
-        top: 42%;
-        width: 30rem;
+        top: 44.5%;
+        width: 29.5rem;
        }
     .pets-gallery::before {
         width: 241px;
         height: 180px;
         background-size: 244px;
         background-repeat: no-repeat;
-        bottom: 0;
+        bottom: -65px;
     }
     .pets-gallery::after {
-        position: absolute;
         background-size: 383px;
         background-repeat: no-repeat;
-        bottom: -260px;
+        bottom: -325px;
         left: -200px;
-        z-index: -1;
+        z-index: 0;
     }
     .pet-card:hover img {
         margin-top: 0;
@@ -891,33 +909,47 @@ Small Desktop Layout
     }
     /* Pick and Feed Block */
     .friends {
-        min-height: 87.6rem;
-        padding: 3rem 0 5rem;
+        padding: 3rem 0 5rem 0;
         margin-top: 6.6rem;
     }
     .friends-container {
-        padding: 3rem 0;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .friends-title {
+        margin-bottom: 2rem;
+    }
+    .friends-subtitle {
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
     }
     .friends-info {
-        margin-left: 4.8rem;
-        padding-left: 0;
+        margin: 0;
+        padding-left: 5rem;
     }
-    .friends-text-bold,
+    .friends-text-bold {
+        margin-bottom: 1.2rem;
+        width: 90%;
+    }
     .friends-text-normal {
-        width: 81.3rem;
+        width: 95%;
+    }
+    .friends-explanation {
+        margin-top: 4rem;
+        margin-bottom: 3.7rem;
+    }
+    .btn-feed {
+        margin-top: 2rem;
     }
     /* Testimonials Block */
-    .testimonials-container {
-        padding: 0;
-        margin-bottom: -5rem;
+    .testimonials {
+        padding-top: 10rem;
+        padding-bottom: 14.1rem;
     }
     .testimonials-container:after {
-        content: "";
-        width: 239.98px;
-        height: 225.62px;
         position: absolute;
-        bottom: -22%;
-        right: -6%;
+        bottom: -33%;
+        right: -14%;
         background: url("../../assets/images/leaf-foto-small.png");
     }
     .testimonials-title {
@@ -932,7 +964,7 @@ Small Desktop Layout
     .scroller {
         width: 36rem;
         height: 0.6rem;
-        margin-left: 25rem;
+        margin-left: 27rem;
         margin-bottom: 5.2rem;
     }
     .scroller-bar {
@@ -940,8 +972,10 @@ Small Desktop Layout
         height: 0.6rem;
     }
     /* Footer */
-    .footer-container {
-        padding: 4rem 3rem 5rem;
-
+    .footer-col-center {
+        margin-left: 14.5rem;
+    }
+    .email {
+        margin-right: 3.1rem;
     }
 }
